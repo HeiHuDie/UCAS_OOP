@@ -1,0 +1,53 @@
+@startuml
+
+class Car_Factory{
+    private String Model
+    private int Date
+    private int Warranty_Period
+    private int Useful_Life
+    public String getModel()
+    public int getDate()
+    public int getWarranty_Period()
+    public int getUseful_Life()
+    public void setModel(String Model)
+    public void setDate(int data)
+    public void setWarranty_Period(int data)
+    public void setUseful_Life(int data)
+    public Car_Factory product_Car(int Date,int ID,int Warranty_Period,int Useful_Life)
+    public void maintenance_Car(Car_Owner car)
+}
+class Car_Owner{
+    private String Model
+    private int Date
+    private int WarrantyPeriod
+    private int Usage_Time
+    public String getModel()
+    public int getDate()
+    public int getWarranty_Period()
+    public int getUsage_Time()
+    public void setModel(String Model)
+    public void setDate(int data)
+    public void setWarranty_Period(int data)
+    public void setUsage_Time(int data)
+    public Car_Owner buyCar(Car_Factory Car)
+    public void sellCar(Car_Owner Car);
+    public void drive_Car(Car_Owner Car);
+}
+
+class Car_Traffic_management_agency{
+    private String Model
+    private int Date
+    private int Car_ID
+    private int Scores
+    public String getModel()
+    public int getDate()
+    public int getCar_ID()
+    public int getScores()
+    public void setModel(String data)
+    public void setCar_ID(int data)
+    public void setDate(int data)
+    public void setScores(int data)
+    public void cutScores(Car_Traffic_management_agency Car,int cutscores)
+    public void detain(Car_Traffic_management_agency,int start_day,int end_day)
+}
+@enduml

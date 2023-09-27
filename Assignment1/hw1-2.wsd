@@ -1,0 +1,50 @@
+@startuml
+class Student {
+    private int Student_ID
+    private String Name
+    private int Grade
+    private List<Book> borrowedBooks
+    public int getStudent_ID()
+    public String getName()
+    public int getGrade()
+    public void setStudent_ID(int data)
+    public void setName(String data)
+    public void setGrade(int data)
+    public void borrowBook(Book book)
+    public void returnBook(Book book)
+}
+class Book {
+    private int Book_ID
+    private String Title
+    private String Author
+    private String Publisher
+    private boolean isBorrowed
+    public int getBook_ID()
+    public String getTitle()
+    public String getAuthor()
+    public String getPublisher()
+    public boolean getisBorrowed()
+    public void setBook_ID(int data)
+    public void setTitle(String data)
+    public void setAuthor(String data)
+    public void setPublisher(String data)
+    public void setisBorrowed(boolean borrowed);
+    public boolean canBeBorrowed()
+    public String getBookInfo()
+}
+class Librarian {
+    private int Staff_ID
+    private String Name
+    private String Library_Name
+    public int getStaff_ID()
+    public String getName()
+    public String getLibrary_Name()
+    public void setStaff_ID(int data)
+    public void setName(String data)
+    public void setLibrart_Name(String data)
+    public void checkBorrowingEligibility(Student student)
+    public void updateBookStatus(Book book, boolean borrowed)
+    public void addNewBook(int Book_ID, String Title, String Author, String Publisher)
+}
+
+@enduml
