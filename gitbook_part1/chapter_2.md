@@ -1,6 +1,6 @@
 # Chapter 2
 ## WordCount的一生
-笔者将以flink/flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streamin/examples/wordcount/WordCount.java为例子简单说明其运行过程。源码如下所示：  
+笔者将以flink/flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streamin/examples/wordcount/WordCount.java为例子，简单说明如何提交一个作业的过程。源码如下所示：  
 ```java
     /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
